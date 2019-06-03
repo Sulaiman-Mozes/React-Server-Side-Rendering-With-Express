@@ -1,0 +1,229 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Component It should render Article Component 1`] = `
+<props => {
+  /* istanbul ignore next */
+  cov_1n8pcmooa0.f[1]++;
+  const {
+    article,
+    store: {
+      lookupAuthor
+    }
+  } =
+  /* istanbul ignore next */
+  (cov_1n8pcmooa0.s[4]++, props);
+  const author =
+  /* istanbul ignore next */
+  (cov_1n8pcmooa0.s[5]++, lookupAuthor(article.authorId));
+  const {
+    lastName,
+    firstName,
+    website
+  } =
+  /* istanbul ignore next */
+  (cov_1n8pcmooa0.s[6]++, author);
+
+  /* istanbul ignore next */
+  cov_1n8pcmooa0.s[7]++;
+  return (
+    /* istanbul ignore next */
+    _react.default.createElement(
+    /* istanbul ignore next */
+    "div",
+    /* istanbul ignore next */
+    {
+      style: styles.article
+    },
+    /* istanbul ignore next */
+    _react.default.createElement(
+    /* istanbul ignore next */
+    "div",
+    /* istanbul ignore next */
+    {
+      style: styles.title
+    }, article.title),
+    /* istanbul ignore next */
+    _react.default.createElement(
+    /* istanbul ignore next */
+    "div",
+    /* istanbul ignore next */
+    {
+      style: styles.date
+    }, dateDisplay(article.date)),
+    /* istanbul ignore next */
+    _react.default.createElement(
+    /* istanbul ignore next */
+    "div",
+    /* istanbul ignore next */
+    {
+      style: styles.author
+    },
+    /* istanbul ignore next */
+    _react.default.createElement(
+    /* istanbul ignore next */
+    "a",
+    /* istanbul ignore next */
+    {
+      href: website
+    }, \`\${firstName} \${lastName}\`)),
+    /* istanbul ignore next */
+    _react.default.createElement(
+    /* istanbul ignore next */
+    "div",
+    /* istanbul ignore next */
+    {
+      style: styles.body
+    }, article.body))
+  );
+}Container
+  article={
+    Object {
+      "body": "body",
+      "date": "",
+      "title": "title",
+    }
+  }
+>
+  <Article
+    article={
+      Object {
+        "body": "body",
+        "date": "",
+        "title": "title",
+      }
+    }
+    store={
+      Object {
+        "lookupAuthor": [Function],
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "borderBottomColor": "#aaa",
+          "borderBottomStyle": "solid",
+          "borderBottomWidth": 1,
+          "marginBottom": 10,
+          "paddingBottom": 10,
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "fontWeight": "bold",
+          }
+        }
+      >
+        title
+      </div>
+      <div
+        style={
+          Object {
+            "color": "#888",
+            "fontSize": "0.85em",
+          }
+        }
+      >
+        Invalid Date
+      </div>
+      <div
+        style={
+          Object {
+            "paddingBottom": 10,
+            "paddingTop": 10,
+          }
+        }
+      >
+        <a>
+          undefined undefined
+        </a>
+      </div>
+      <div
+        style={
+          Object {
+            "paddingLeft": 20,
+          }
+        }
+      >
+        body
+      </div>
+    </div>
+  </Article>
+</props => {
+  /* istanbul ignore next */
+  cov_1n8pcmooa0.f[1]++;
+  const {
+    article,
+    store: {
+      lookupAuthor
+    }
+  } =
+  /* istanbul ignore next */
+  (cov_1n8pcmooa0.s[4]++, props);
+  const author =
+  /* istanbul ignore next */
+  (cov_1n8pcmooa0.s[5]++, lookupAuthor(article.authorId));
+  const {
+    lastName,
+    firstName,
+    website
+  } =
+  /* istanbul ignore next */
+  (cov_1n8pcmooa0.s[6]++, author);
+
+  /* istanbul ignore next */
+  cov_1n8pcmooa0.s[7]++;
+  return (
+    /* istanbul ignore next */
+    _react.default.createElement(
+    /* istanbul ignore next */
+    "div",
+    /* istanbul ignore next */
+    {
+      style: styles.article
+    },
+    /* istanbul ignore next */
+    _react.default.createElement(
+    /* istanbul ignore next */
+    "div",
+    /* istanbul ignore next */
+    {
+      style: styles.title
+    }, article.title),
+    /* istanbul ignore next */
+    _react.default.createElement(
+    /* istanbul ignore next */
+    "div",
+    /* istanbul ignore next */
+    {
+      style: styles.date
+    }, dateDisplay(article.date)),
+    /* istanbul ignore next */
+    _react.default.createElement(
+    /* istanbul ignore next */
+    "div",
+    /* istanbul ignore next */
+    {
+      style: styles.author
+    },
+    /* istanbul ignore next */
+    _react.default.createElement(
+    /* istanbul ignore next */
+    "a",
+    /* istanbul ignore next */
+    {
+      href: website
+    }, \`\${firstName} \${lastName}\`)),
+    /* istanbul ignore next */
+    _react.default.createElement(
+    /* istanbul ignore next */
+    "div",
+    /* istanbul ignore next */
+    {
+      style: styles.body
+    }, article.body))
+  );
+}Container>
+`;

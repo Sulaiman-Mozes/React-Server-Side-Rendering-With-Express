@@ -1,0 +1,140 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Component It should render App Component 1`] = `
+<div>
+  <TimeStamp />
+  <class SearchBar extends
+/* istanbul ignore next */
+(
+/* istanbul ignore next */
+_react.
+/* istanbul ignore next */
+default.PureComponent) {
+  constructor(props) {
+    /* istanbul ignore next */
+    cov_19tqescfjs.f[0]++;
+    cov_19tqescfjs.s[0]++;
+    super(props);
+
+    /* istanbul ignore next */
+    _defineProperty(this, "handleSearch", (cov_19tqescfjs.s[2]++, event => {
+      /* istanbul ignore next */
+      cov_19tqescfjs.f[1]++;
+      cov_19tqescfjs.s[3]++;
+      event.preventDefault();
+      const {
+        name,
+        value
+      } =
+      /* istanbul ignore next */
+      (cov_19tqescfjs.s[4]++, event.target);
+
+      /* istanbul ignore next */
+      cov_19tqescfjs.s[5]++;
+      this.setState({
+        [name]: value
+      });
+    }));
+
+    /* istanbul ignore next */
+    _defineProperty(this, "handleSubmit", (cov_19tqescfjs.s[6]++, event => {
+      /* istanbul ignore next */
+      cov_19tqescfjs.f[2]++;
+      cov_19tqescfjs.s[7]++;
+      event.preventDefault();
+      const {
+        search
+      } =
+      /* istanbul ignore next */
+      (cov_19tqescfjs.s[8]++, this.state);
+      const {
+        store: {
+          doSearch
+        }
+      } =
+      /* istanbul ignore next */
+      (cov_19tqescfjs.s[9]++, this.props);
+
+      /* istanbul ignore next */
+      cov_19tqescfjs.s[10]++;
+      doSearch(search);
+    }));
+
+    /* istanbul ignore next */
+    _defineProperty(this, "handleClick", (cov_19tqescfjs.s[11]++, () => {
+      /* istanbul ignore next */
+      cov_19tqescfjs.f[3]++;
+      cov_19tqescfjs.s[12]++;
+      this.setState({
+        search: ''
+      }, () => {
+        /* istanbul ignore next */
+        cov_19tqescfjs.f[4]++;
+        cov_19tqescfjs.s[13]++;
+        return this.handleSubmit(event);
+      });
+    }));
+
+    /* istanbul ignore next */
+    cov_19tqescfjs.s[1]++;
+    this.state = {
+      search: ''
+    };
+  }
+
+  render() {
+    /* istanbul ignore next */
+    cov_19tqescfjs.f[5]++;
+    const {
+      search
+    } =
+    /* istanbul ignore next */
+    (cov_19tqescfjs.s[14]++, this.state);
+
+    /* istanbul ignore next */
+    cov_19tqescfjs.s[15]++;
+    return (
+      /* istanbul ignore next */
+      _react.default.createElement(
+      /* istanbul ignore next */
+      "div",
+      /* istanbul ignore next */
+      null,
+      /* istanbul ignore next */
+      _react.default.createElement(
+      /* istanbul ignore next */
+      "form",
+      /* istanbul ignore next */
+      {
+        onSubmit: this.handleSubmit
+      },
+      /* istanbul ignore next */
+      _react.default.createElement(
+      /* istanbul ignore next */
+      "input",
+      /* istanbul ignore next */
+      {
+        type: "search",
+        name: "search",
+        value: search,
+        placeholder: "search",
+        onChange: this.handleSearch,
+        onClickCapture: this.handleClick
+      }),
+      /* istanbul ignore next */
+      _react.default.createElement(
+      /* istanbul ignore next */
+      "input",
+      /* istanbul ignore next */
+      {
+        type: "submit"
+      })))
+    );
+  }
+
+}Container />
+  <ItemList
+    articles={Object {}}
+  />
+</div>
+`;

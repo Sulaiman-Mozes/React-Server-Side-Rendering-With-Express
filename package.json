@@ -1,0 +1,78 @@
+{
+  "name": "react-server-side-rendering-with-express",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "sulaiman mozes",
+  "license": "MIT",
+  "scripts": {
+    "start:dev": "NODE_PATH=./lib pm2 start lib/server.js --watch --interpreter babel-node",
+    "start:client": "webpack -wd",
+    "build": "webpack -p",
+    "lint": "eslint lib",
+    "test": "jest",
+    "test:cov": "jest --coverage"
+  },
+  "dependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.4.4",
+    "axios": "^0.18.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^2.1.1",
+    "ejs": "^2.6.1",
+    "express": "^4.17.0",
+    "isomorphic-style-loader": "^5.1.0",
+    "lodash.pickby": "^4.6.0",
+    "node-sass": "^4.12.0",
+    "pm2": "^3.5.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.32.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.13.1",
+    "enzyme-to-json": "^3.3.5",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0",
+    "jest-cli": "^24.8.0",
+    "jest-puppeteer": "^4.1.1",
+    "puppeteer": "^1.17.0",
+    "webpack-cli": "^3.3.2"
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "setupFiles": [
+      "./lib/setupTests.js"
+    ],
+    "collectCoverageFrom": [
+      "lib/**/*.{js,jsx,mjs}",
+      "!lib/setupTests.js",
+      "!lib/server.js",
+      "!lib/config.js",
+      "!lib/renderers/dom.js",
+      "!lib/renderers/server.js"
+    ],
+    "testEnvironment": "jsdom",
+    "preset": "jest-puppeteer",
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+    },
+    "modulePaths": [
+      "<rootDir>/lib"
+    ]
+  }
+}
