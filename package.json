@@ -23,7 +23,7 @@
     "babel-loader": "^8.0.6",
     "css-loader": "^2.1.1",
     "ejs": "^2.6.1",
-    "express": "^4.17.0",
+    "express": "^4.17.3",
     "isomorphic-style-loader": "^5.1.0",
     "lodash.pickby": "^4.6.0",
     "node-sass": "^4.12.0",
